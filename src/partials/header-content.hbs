@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{{{or site.url siteRootPath}}}">{{site.title}}</a>
+      <a class="navbar-item" href="https://www.optum.com"><img src="{{{uiRootPath}}}/img/logo.svg" alt="Optum"></a>
       {{#if env.SITE_SEARCH_PROVIDER}}
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
@@ -15,16 +15,17 @@
         <span></span>
       </button>
     </div>
-    <div id="topbar-nav" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Products</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Product A</a>
-            <a class="navbar-item" href="#">Product B</a>
-            <a class="navbar-item" href="#">Product C</a>
-          </div>
+         <div id="topbar-nav" class="navbar-menu">
+               <div class="navbar-end">
+                 <a class="navbar-item" href="../documentation/index.html">Home</a>
+                 <div class="navbar-item has-dropdown is-hoverable">
+                   <a class="navbar-link" href="{{relativize site.components.server.url}}">Products</a>
+                   <div class="navbar-dropdown">
+                     <a class="navbar-item" href="../sbe/index.html">SBE</a>
+                     <a class="navbar-item" href="../isbe/index.html">ISBE</a>
+                     <a class="navbar-item" href="../esb/index.html">ESB</a>
+                     <a class="navbar-item" href="../eligibility/index.html">Rule Engine</a>
+                   </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Services</a>
@@ -36,7 +37,7 @@
         </div>
         <div class="navbar-item">
           <span class="control">
-            <a class="button is-primary" href="#">Download</a>
+            <a class="btn red-btn" href="https://uhgazure.sharepoint.com/:f:/t/StateBasedExchanges/EtntEfw9-JFHp3-mTzcQkYoBa5As9-satIX1XinYGLtxJA?e=Efep8Y">Sharepoint</a>
           </span>
         </div>
       </div>
